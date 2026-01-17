@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google form</title>
+</head>
+<body>
+    <p>Welcome to Google Form</p>
+    
+    <div class="centered">
+        <form method="POST">
+            <label>Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name"><br><br>
+
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Enter your email"><br><br>
+
+            <input type="submit" value="Submit"><br><br>
+
+            {% if error %}
+            <p style="color: red;">{{ error }}</p>
+            {% endif %}
+
+        </form>
+
+        
+    </div>
+</body>
+<style>
+    body {
+        background-color: wheat;
+    }
+    p {
+        text-align: center;
+        font-size: 30px;
+        font-family: cursive;
+        color:brown;
+    }
+    .centered{
+        margin: auto;
+        width: 50%;
+        border: 3px solid brown;
+        padding: 10px;
+    }
+</style>
+</html>
